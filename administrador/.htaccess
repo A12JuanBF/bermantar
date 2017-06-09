@@ -1,0 +1,13 @@
+#Header unset Cookie
+
+#Header unset Set-Cookie
+
+#AuthName Panel
+
+#AuthGroupFile /dev/null
+
+#AuthType Basic
+
+#AuthUserFile /home/u380135622/public_html/administrador/.htpasswd
+
+#require valid-user

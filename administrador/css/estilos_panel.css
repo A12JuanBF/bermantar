@@ -1,0 +1,84 @@
+html,body{
+background: url(../img/e_hd169_9-minimalistic.jpg);
+        background-repeat: no-repeat;
+  	background-size: 100% 100%;
+	background-attachment: fixed; 
+	
+
+}
+
+@media screen and (max-width:767px) {
+ html,body{
+ background: none;
+   background-color: #fff;
+}
+}
+
+body,#salir a, span{
+padding:5px;
+}
+header , footer{
+background-color:#FAFAFA;
+height:50px;
+}
+header figure{
+margin-top:25px;
+z-index:1;
+
+-webkit-box-shadow: -7px -7px 5px -3px rgba(0,0,0,0.48);
+-moz-box-shadow: -7px -7px 5px -3px rgba(0,0,0,0.48);
+box-shadow: -7px -7px 5px -3px rgba(0,0,0,0.48);
+	
+	background-color: #FFF;
+	border-radius:5px;
+	border:1px solid #cccccc;
+}
+section{
+margin-top:10px;
+}
+section div{
+margin-top:10px;
+}
+
+#claves{
+display:none;
+}
+#subir_imagenes{
+display:none;
+}
+#tabla_usuarios{
+display:none;
+}
+#claves , #subir_imagenes{
+padding:5px;
+}
+#claves div {
+ margin-bottom:5px;
+} 
+footer{
+width:100%;
+position: fixed;
+bottom: 0;
+}
+.breadcrumb{
+    padding:0px;
+}
+
+table span:hover{
+cursor:pointer; 
+cursor: hand;
+color:#B94A48;
+}
+table span{
+color:#337AB7;
+}
+.table-hover tbody tr:hover td {
+  background-color: #E0ECF8;
+}
+footer ol{
+margin-top:0px;
+margin-right:10px;
+}
+footer ol li{
+color:#337AB7;
+}

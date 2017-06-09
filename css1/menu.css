@@ -1,0 +1,61 @@
+/* 
+    Document   : menu
+    Created on : 29-abr-2014, 13:15:03
+    Author     : PC
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+nav{
+    
+    width: 100%;
+    
+    background-color: #5bc0de;
+    margin-bottom: 1%;
+    border-bottom: 2px solid black;
+    
+}
+nav ul{
+   
+   width: auto;
+   height: auto;
+}
+nav,nav ul{
+    border-radius: 5px;
+}
+nav li{
+    padding-left: 0%;
+    padding: 0.4%;
+    display: inline-block;
+}
+nav li:nth-child(even){
+    width: 0.1%;
+    border-left: 1px inset black;
+    padding: 0.3%;
+}
+nav li:hover{
+    background-color: #ffffff;
+
+background-image: -moz-linear-gradient(left, #e6e6e6, #dcdcdc);
+background-image: -ms-linear-gradient(left, #e6e6e6, #dcdcdc);
+background-image: -o-linear-gradient(left, #e6e6e6, #dcdcdc);
+background-image: -webkit-linear-gradient(left, #e6e6e6, #dcdcdc);
+background-image: linear-gradient(left, #e6e6e6, #dcdcdc);
+
+}
+nav li:hover:nth-child(even){
+    background: none;
+}
+ @media screen and (min-width: 900px) and (max-width: 1280px){
+nav a {
+    font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 1280px){
+    
+    nav a {
+    font-size: 1.1em;
+    }
+    
+}

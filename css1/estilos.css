@@ -1,0 +1,31 @@
+html,body{    
+    height: 100%;    
+}
+
+footer{
+    position: absolute ;
+    height: 40px;  
+    background-color: #f5f5f5;
+    bottom: 0;
+    width: 100%;  
+}
+
+#head_excel,#crearpdf,#preload,#entrada,#salida,#buscar_salida,#buscar_entrada,#contenedor_respuesta,.restar-listar{
+    display: none;
+    
+}
+#head_excel,#crearpdf,#down-lista,#section2{
+   margin: 1em; 
+}
+#table,#num_filas{
+    visibility: hidden;
+}
+#buscar-listar{
+    margin-bottom: 1em;
+}
+#buscar-listar,#head_excel{
+    background-color: #E0EDF5;
+}
+#head_excel{
+    padding: 0.5em;
+}

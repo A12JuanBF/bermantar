@@ -1,0 +1,277 @@
+<div class="container">
+    <div class="row ">
+
+        <div id="escoger" class="col-lg-3 col-md-8 col-sm-8 col-xs-10">
+            <h4>Buscar entradas o salidas</h4>
+            <form role="form">
+                <div class="form-group"> 
+
+                    <select class="form-control">
+                        <option></option>
+                        <option>Buscar Entrada</option>
+                        <option>Buscar Salida</option>
+                    </select>
+                </div>
+            </form>
+        </div> 
+    </div>
+
+    <div id="buscar_salida" class="row panel panel-default">
+        <div class=" col-lg-9  col-md-12 col-sm-12 col-xs-12 panel-body">
+            <form>
+                <div class="row"><h3 class="text-center">Buscar salida</h3></div> 
+                <div class="row">
+                    <div class="form-group col-lg-4 "> 
+                        <label  class="control-label">Destinatario organización</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Destinatario organización">
+
+                    </div>
+                    <div class="form-group col-lg-4 "> 
+                        <label  class="control-label">Destinatario persona</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Destinatario persona">
+
+                    </div>
+                    <div class="form-group col-lg-3 "> 
+                        <label  class="control-label">Localidad</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Localidad">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3 "> 
+                        <label  class="control-label">Código de correos</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Código de correos">
+
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label  class="  control-label">Fecha dd-mm-aaaa</label>
+                        <input type="text" class=" form-control input-sm" >
+
+                    </div>  
+
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-3">
+                        <label  class="  control-label">Modo de salida</label>
+                        <select class="form-control input-sm">
+                            <option value="%%">Indiferente</option>
+                            <option>Correos</option>
+                            <option>Recogido en el almacén</option> 
+                        </select>
+
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label  class="  control-label">Tipo de envío</label>
+                        <select class="form-control input-sm">
+                            <option value="%%">Indiferente</option>
+                            <option>Distribución a Bibliotecas</option>
+                            <option>Librería institucional</option>
+                            <option>Extraordinario</option>
+                        </select>
+
+                    </div> 
+
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-lg-4"> 
+                        <input type="reset" class=" col-lg-5 btn btn-default" value="Cancelar">
+                        <input type="submit" class=" col-lg-5 btn btn-primary" value="Enviar">  
+                    </div> 
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div id="buscar_entrada" class="row panel panel-default">
+        <div class=" col-lg-7  col-md-12 col-sm-12 col-xs-12 panel-body">
+            <form>
+                <div class="row"><h3 class="text-center">Buscar Entrada</h3></div>
+                <div class="row">
+                    <div class="form-group col-lg-5 "> 
+                        <label  class="control-label">Empresa, institución ...</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Empresa, institución...">
+
+                    </div>  
+                    <div class="form-group col-lg-5 "> 
+                        <label  class="control-label">Persona</label>
+                        <input type="text" class=" form-control input-sm" 
+                               placeholder="Persona">
+
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-3">
+                        <label  class="  control-label">Fecha dd-mm-aaaa</label>
+                        <input type="text" class=" form-control input-sm" >
+
+                    </div>   
+                    <div class="form-group col-lg-4">
+                        <label  class="  control-label">Tipo de entrada</label>
+                        <select class="form-control input-sm">
+                            <option value="%%">Indiferente</option>
+                            <option>Distribución a Bibliotecas</option>
+                            <option>Librería institucional</option>
+                            <option>Extraordinario</option>
+                        </select>
+
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-4"> 
+                        <input type="reset" class=" col-lg-5 btn btn-default" value="Cancelar">
+                        <input type="submit" class=" col-lg-5 btn btn-primary" value="Enviar">  
+                    </div>
+
+                </div>
+            </form> 
+
+        </div>   
+
+    </div>
+    <div id="contenedor_respuesta" class="form-group col-lg-6">
+        <p>Procesando...<img  src="img1/cargando.gif"/></p>
+    </div>
+
+
+    <!--Formulario que sale al hacer click en modificar registro en una búsqueda -->
+    <div style="display: none;"  id="modificar">
+        <div>
+            <div class="row ">
+                <div class="form-group col-lg-4 "> 
+                    <label  class="control-label">Destinatario organización</label>
+                    <input id="empresa" type="text" class=" form-control " 
+                           placeholder="Destinatario organización">
+
+                </div>
+                <div class="form-group col-lg-4">
+
+                    <label  class="control-label">Destinatario persona</label>
+                    <input id="persona" type="text" class="form-control" 
+                           placeholder="Destinatario persona"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4"> 
+                    <label  class="  control-label">Dirección</label>
+                    <input id="direccion" type="text" class=" form-control" 
+                           placeholder="Dirección">
+
+
+                </div>  
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Localidad</label>
+                    <input id="localidad" type="text" class=" form-control" 
+                           placeholder="Localidad">
+
+                </div>
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">Provincia</label>
+                    <select id="provincia" class="form-control">
+
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">C.P.</label>
+                    <input id="cp" type="text" class=" form-control" 
+                           placeholder="Código postal">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">Fecha</label>
+                    <input id="fecha" type="text" class=" form-control" >
+
+                </div>  
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Modo de salida</label>
+                    <select id="modo" class="form-control">
+                        <option>Correos</option>
+                        <option>Recogido en el almacén</option> 
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Tipo de envío</label>
+                    <select id="tipo" class="form-control">
+                        <option>Distribución a Bibliotecas</option>
+                        <option>Librería institucional</option>
+                        <option>Extraordinario</option>
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Cod. correos</label>
+                    <textarea id="codigo" class=" form-control" ></textarea>
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="form-group col-lg-5">
+                    <form id="subir_pdf" enctype="multipart/form-data">
+                        <label  class="control-label">Listado/factura</label>
+
+                        <input id="pdf_mod" type="file" name="pdf" class="filestyle" data-buttonText="Selecciona PDF" data-buttonName="btn-warning">
+
+                    </form>       
+                </div>
+                <div class="form-group col-lg-5">
+                    <form id="subir_csv" enctype="multipart/form-data">
+                        <label  class="control-label">CSV o XLS</label>
+
+                        <input id="csv_mod" type="file" name="csv" class="filestyle" data-buttonText="Selecciona CSV o XLS" data-buttonName="btn-success">
+
+                    </form>       
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-4">
+                    <label  class="  control-label">Comentario</label>
+                    <textarea id="comentario" class=" form-control" ></textarea>   
+
+                </div>   
+                <div style="display: none;"  class="row">
+                    <div class="form-group col-lg-3">
+                        <label  class="control-label">CSV (provisional)</label>
+                        <input id="csvprov" type="text" class=" form-control">
+
+                    </div> 
+                    <div class="form-group col-lg-3">
+                        <label  class=" control-label">PDF (provisional)</label>
+                        <input id="pdfprov" type="text" class=" form-control">
+
+                    </div> 
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4"> 
+                    <button id="eliminar" type="button" class=" col-lg-5 btn btn-default">Eliminar</button>
+                    <button id="actualizar" type="button" class=" col-lg-5 btn btn-primary">Modificar</button>  
+                </div> 
+                <div style="display:none;"  id="respuesta_modificar" class="form-group col-lg-6">
+                    <p>Modificando...<img  src="img1/cargando.gif"/></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Formulario que sale al hacer click en modificar registro en una búsqueda -->
+
+</div>
+<div id="tabla_busqueda" class=" table-condensed table-responsive col-lg-12">
+
+</div>

@@ -1,0 +1,219 @@
+
+<div class="container">
+    <div class="row">
+        
+        <div id="escoger" class="col-lg-3 col-md-8 col-sm-8 col-xs-10">
+            <h4>Registrar entradas o salidas</h4>
+            <form role="form">
+                <div class="form-group"> 
+
+                    <select class="form-control">
+                        <option></option>
+                        <option>Registrar Entrada</option>
+                        <option>Registrar Salida</option>
+                    </select>
+                </div>
+            </form>
+        </div> 
+    </div>
+    <div id="salida" class="row panel panel-default">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-body">
+            <div class="row"><h3 class="text-center">Registrar salida</h3></div>  
+            <div class="row ">
+                <div class="form-group col-lg-4 "> 
+                    <label  class="control-label">Destinatario organización</label>
+                    <input type="text" class=" form-control " 
+                           placeholder="Destinatario organización">
+
+                </div>
+                <div class="form-group col-lg-4">
+
+                    <label  class="control-label">Destinatario persona</label>
+                    <input type="text" class="form-control" 
+                           placeholder="Destinatario persona"> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4"> 
+                    <label  class="  control-label">Dirección</label>
+                    <input type="text" class=" form-control" 
+                           placeholder="Dirección">
+
+
+                </div>  
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Localidad</label>
+                    <input type="text" class=" form-control" 
+                           placeholder="Localidad">
+
+                </div>
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">Provincia</label>
+                    <select class="form-control">
+                        
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">C.P.</label>
+                    <input type="text" class=" form-control" 
+                           placeholder="Código postal">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">Fecha</label>
+                    <input type="date" class=" form-control" >
+
+                </div>  
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Modo de salida</label>
+                    <select class="form-control">
+                        <option>Correos</option>
+                        <option>Recogido en el almacén</option> 
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Tipo de envío</label>
+                    <select class="form-control">
+                        <option>Distribución a Bibliotecas</option>
+                        <option>Librería institucional</option>
+                        <option>Extraordinario</option>
+                    </select>
+
+                </div>
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Cod. correos</label>
+                    <textarea class=" form-control" ></textarea>
+
+                </div>
+            </div>
+
+            <!-- input file -->
+            <div class="row">
+
+                <div class="form-group col-lg-5">
+                    <form id="subir_pdf" enctype="multipart/form-data">
+                        <label  class="control-label">Listado/factura</label>
+
+                        <input type="file" name="pdf" class="filestyle" data-buttonText="Selecciona PDF" data-buttonName="btn-warning">
+
+                    </form>       
+                </div>
+                <div class="form-group col-lg-5">
+                    <form id="subir_csv" enctype="multipart/form-data">
+                        <label  class="control-label">CSV o XLS</label>
+
+                        <input type="file" name="csv" class="filestyle" data-buttonText="Selecciona CSV o XLS" data-buttonName="btn-success">
+
+                    </form>       
+                </div>
+
+            </div>
+
+            <!--Devuelve string csv pdf -->
+            <div style="display: none;" class="row">
+                <div class="form-group col-lg-3">
+                    <label  class="control-label">CSV (provisional)</label>
+                    <input type="text" class=" form-control">
+
+                </div> 
+                <div class="form-group col-lg-3">
+                    <label  class=" control-label">PDF (provisional)</label>
+                    <input type="text" class=" form-control">
+
+                </div> 
+
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4">
+                 <label  class="  control-label">Comentario</label>
+                    <textarea class=" form-control" ></textarea>   
+                    
+                </div>   
+                
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4"> 
+                    <button type="button" class=" col-lg-5 btn btn-default">Cancelar</button>
+                    <button type="button" class=" col-lg-5 btn btn-primary">Enviar</button>  
+                </div> 
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+           
+    </div>
+<!--Fin salida --> 
+
+    <div id="entrada" class="row panel panel-default ">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 panel-body">
+            <div class="row"><h3 class="text-center">Registrar entrada</h3></div> 
+
+            <div class="row">
+                <div class="form-group col-lg-4">
+                    <label  class="  control-label">Empresa, Institución etc.</label>
+                    <input type="text" class=" form-control" 
+                           placeholder="Empresa, Institución etc.">
+
+                </div>     
+                <div class="form-group col-lg-4">
+                    <label  class="  control-label">Persona</label>
+                    <input type="text" class=" form-control" placeholder="Persona">
+
+                </div>
+
+                <div class="form-group col-lg-2">
+                    <label  class="  control-label">Fecha de entrada</label>
+                    <input type="date" id="datepicker" class=" form-control" >
+
+                </div> 
+            </div>
+            
+            <div class="row">
+                <div class="form-group col-lg-3">
+                    <label  class="  control-label">Tipo de entrada</label>
+                    <select class="form-control">
+                        <option>Distribución a Bibliotecas</option>
+                        <option>Librería institucional</option>
+                        <option>Extraordinario</option>
+                    </select>
+
+                </div>
+               <div class="form-group col-lg-5">
+                    <form id="albaran" enctype="multipart/form-data">
+                        <label  class="control-label">Albarán de entrega</label>
+
+                        <input  type="file" name="pdf" class="filestyle" data-buttonText="Selecciona PDF" data-buttonName="btn-warning">
+
+                    </form>       
+                </div>
+                <input type="text" style="display: none;" class="col-lg-2" placeholder="albaran">
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-5">
+                   <label  class="  control-label">Comentario</label>
+                    <textarea class=" form-control" ></textarea> 
+                </div>    
+                
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-4"> 
+                    <button type="button" class=" col-lg-5 btn btn-default">Cancelar</button>
+                    <button type="button" class=" col-lg-5 btn btn-primary">Enviar</button>  
+                </div> 
+            </div>
+        </div>   
+    </div>
+
+    <!--Fin container -->
+</div>
+
